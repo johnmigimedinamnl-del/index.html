@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Activity 3: Webpage Layout Design</title>
+
+<style>
+html {scroll-behavior: smooth;}
+
+body {background-image: url("background.png"); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed; margin: 0; font-family: Arial;}
+
+.logo {height: 130px; width: 130px; border-radius: 50%;}
+
+.nav {position: fixed; top: 0; left: 0; width: 100%; height: 160px; display: flex; justify-content: space-evenly; align-items: center; background-color: #ffd54f; box-shadow: 0px 2px 12px;}
+
+.nav a {text-decoration: none; color: darkred; font-size: 25px; padding: 20px;}
+
+.nav a:hover {background-color: #fff695; color: orange; border-radius: 20px;}
+
+section {height: 100vh; display: flex; justify-content: center; align-items: center; padding: 100px 20px 20px;}
+
+.border {width: 900px; min-height: 600px; padding: 45px 80px; border-radius: 45%; box-shadow: 3px 3px 12px; background-image: url("potatosecbg.png"); background-repeat: no-repeat; background-position: center; background-size: 1500px; text-align: center;}
+
+h2 {text-align: center; color: #8b4513; font-size: 40px; margin-bottom: 15px;}
+
+p, li {font-size: 30px; color: #5c3300; font-weight: bold; padding-top: 18px;}
+
+ul, ol {padding-left: 35px; text-align: left;}
+
+.FMPB {width: 250px; border-radius: 45%; display: block; margin: 15px auto; box-shadow: 0px 4px 12px;}
+</style>
+
+</head>
+
+<body>
+
+<nav class="nav">
+<img src="potatologo.png" class="logo" alt="Logo">
+
+<a href="#Home">Home</a>
+<a href="#Recipe">Recipe</a>
+<a href="#Steps">Steps</a>
+<a href="#Benefits">Benefits</a>
+</nav>
+
+
+<section id="Home">
+<div class="border">
+<h2>Fried Mashed Potato Balls</h2>
+<img src="FMPB.webp" class="FMPB">
+<ul><li>A snack that I accidentally thought of and wanted to make it because it is easy to make and is very delicious.</li></ul>
+</div>
+</section>
+
+
+<section id="Recipe">
+<div class="border">
+<h2>Recipe</h2>
+<ul style="list-style-type: square;">
+<li>2 cups mashed potatoes</li>
+<li>½ cup shredded cheese</li>
+<li>2 tbsp all-purpose flour</li>
+<li>2 tbsp chopped spring onions</li>
+<li>Salt and pepper to taste</li>
+<li>1 egg</li>
+<li>1 cup breadcrumbs</li>
+<li>Oil for frying</li>
+</ul>
+</div>
+</section>
+
+<section id="Steps">
+<div class="border">
+<h2>Steps</h2>
+<ol type="I" reversed>
+<li>Boil 3 medium potatoes for 20–25 minutes until tender, then mash.</li>
+<li>Mix mashed potatoes, 2 tbsp flour, 1 tbsp chopped spring onions, salt, and pepper.</li>
+<li>Add cheese in the center (optional) and roll into balls.</li>
+<li>Dip in beaten egg, then coat with breadcrumbs.</li>
+<li>Fry in hot oil for 3–5 minutes until golden brown.</li>
+<li>Drain the excess oil usingpaper towels and it is ready to be served and eaten!</li>
+</ol>
+</div>
+</section>
+
+
+<section id="Benefits">
+<div class="border">
+<h2>Benefits</h2>
+<ul style="list-style-type: circle;">
+<li>Mashed potatoes - Provides energy and potassium.</li>
+<li>Shredded cheese - Rich in calcium and protein.</li>
+<li>All-purpose flour - Gives energy from carbohydrates.
+</li>
+<li>Spring onion - Provides vitamins and antioxidants.</li>
+<li>Salt - Supports nerve and muscle function.</li>
+<li>Pepper - Contains antioxidants and aids digestion</li>
+<li>Egg - High in protein and essential vitamins.</li>
+<li>Breadcrumbs - Adds energy and crispy texture.</li>
+</ul>
+</div>
+</section>
+
+
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menu Table</title>
+
+  <style>
+  table, th, td {border: 1px solid black; border-collapse: collapse; margin: auto; text-align: center; padding: 15px; width: 700px;}
+  
+table {box-shadow: 2px 2px 10px;}
+  th {height: 20px;}
+
+  td {height: 50px; vertical-align: middle;}
+
+  .dessert {height: 100px;}
+
+  .beverages {height: 130px; }
+
+  img { width: 80px; height: 80px; border-radius: 10px; box-shadow: 2px 2px 10px;}
+
+  ul, ol {text-align: left; padding-left: 25px; margin: 0;}
+
+  h3 {text-align: center; border: 1px solid black; margin: 0 auto; width: 700px; padding: 10px 0; background-color: #0000FF; box-shadow: 2px 2px 10px;}
+  
+  .head{background-color: #6495ED;}
+  
+  .category {background-color: #89CFF0;}
+  
+  .row  {background-color: #00FFFF;}
+  
+  h1 {font-family: "Brush Script MT", cursive; text-align: center; color: #0096FF; background-color: blue; border-radius: 10px; box-shadow: 2px 2px 10px;}
+  
+  </style>
+</head>
+
+<body>
+ <h1> Janx Maen Menus</h1>
+  <h3>Restaurant Menu</h3>
+
+  <table>
+
+    <tr class="head">
+      <th>Category</th>
+      <th>Image</th>
+      <th>Menu</th>
+      <th>Description</th>
+    </tr>
+
+    <tr>
+      <td rowspan="2" class="category">Main Course</td>
+
+      <td class="row">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTyF9oK85wiNxljqVJOEDZHGz0Kd6H9qrPbtBH02Ybcw&s=10">
+      </td>
+
+      <td class="row">
+        <ul>
+          <b>(Best Sellers)</b>
+          <br>
+          <li>Adobo</li>
+          <li>Sinigang</li>
+          <li>Afritada</li>
+        </ul>
+      </td>
+
+      <td class="row">
+        Traditional Filipino dishes served fresh with rich flavors and quality ingredients.
+      </td>
+    </tr>
+
+    <tr>
+      <td class="row">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLgVVbJ_JMvaJVJKcnoPBOAp_uBji4HfHI47Xatzv6Z6m0q-7tL7KplJc&s=10">
+      </td>
+
+      <td class="row">
+        <ol>
+          <b>(Combo Meals)</b>
+          <br>
+          <li>Adobo with Rice</li>
+          <li>Sinigang with Rice</li>
+          <li>Afritada with Rice</li>
+        </ol>
+      </td>
+
+      <td class="row">
+        Complete meals served with steamed rice for a satisfying dining experience.
+      </td>
+    </tr>
+
+    <tr class="dessert">
+      <td class="category">Dessert</td>
+
+      <td class="row">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCj4YJvrRmMc9b8E2ZIv0G5QxLIacmRG2odmGVfVpWMw&s=10">
+      </td>
+
+      <td class="row">
+         <b>(Best Sellers)</b>
+         <br>
+        <ul style="list-style-type: circle;">
+          <li>Ice Cream</li>
+          <li>Buko Pandan</li>
+          <li>Leche Flan</li>
+        </ul>
+      </td>
+
+      <td class="row">
+        Sweet treats that are perfect for ending your meal on a delicious note.
+      </td>
+    </tr>
+
+    <tr class="beverages">
+      <td colspan="2" class="category">Beverages</td>
+
+      <td class="row">
+         <b>(Best Sellers)</b>
+         <br>
+        <ul style="list-style-type: square;">
+          <li>Coke</li>
+          <li>Gulaman</li>
+          <li>Iced Tea</li>
+          <li>Coffee</li>
+        </ul>
+      </td>
+
+      <td class="row">
+        Refreshing hot and cold drinks to complement every meal.
+      </td>
+    </tr>
+
+  </table>
+
+</body>
+
+</html>

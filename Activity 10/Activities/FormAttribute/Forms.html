@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Forms</title>
+</head>
+
+<style>
+  .holders {display: flex; gap: 10px;justify-content: center;}
+
+  .holder {display: block; text-align: left;}
+  
+  .additional {width: 516px; margin: auto; text-align: left; }
+  
+</style>
+
+<body>
+  <form action="Forms2.html" method="GET">
+    <fieldset>
+      <legend>Personal Information</legend>
+     <br>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjtHioeP3798yMa6QIJsA3piLZlDdOMuA17Q&s" style="display: block; margin: auto;"><br>
+
+      <div class="holders">
+
+        <div class="holder">
+          <label>First Name</label><br>
+          <input type="text" name="firstName" required placeholder="Enter First Name">
+        </div>
+
+        <div class="holder">
+          <label>Last Name</label><br>
+          <input type="text" name="lastName" required placeholder="Enter Middle Initial">
+        </div>
+
+        <div class="holder">
+          <label>Middle Initial</label><br>
+          <input type="text" name="middleInitial" required placeholder="Enter Last Name">
+        </div>
+
+      </div>
+
+      <br>
+
+      <div class="holders">
+
+        <div class="holder">
+          <label>Email Adress</label><br>
+          <input type="email" name="email" required placeholder="you@email.com" style="width: 200px;">
+        </div>
+
+        &emsp;&emsp;&emsp;&emsp;&emsp;
+
+        <div class="holder">
+          <label>Password</label><br>
+          <input type="password" name="password" required minlength="8" maxlength="12" placeholder="Create a Password" style="width: 200px;">
+        </div>
+
+      </div>
+      <br>
+      <div class="holders">
+
+        <div class="holder">
+          <label>Age</label><br>
+          <input type="number" name="age" required placeholder="Enter Your Age" style="width: 200px;">
+        </div>
+
+        &emsp;&emsp;&emsp;&emsp;&emsp;
+
+        <div class="holder">
+          <label>Birthday</label><br>
+          <input type="date" name="birthday" required style="width: 200px;">
+        </div>
+
+      </div>
+      <br>
+      <div class="holders">
+
+        <div class="holder">
+          <label>Contact</label><br>
+          <input type="number" name="contact" required placeholder="Enter Contact Number" style="width: 500px;">
+        </div>
+
+      </div>
+      <br>
+
+    </fieldset>
+    
+    <br>
+    <br>
+    
+    <fieldset>
+      <legend>Student Information</legend>
+      <br>
+      <div class="holders">
+
+        <div class="holder">
+          <label>Student ID</label><br>
+          <input type="text" name="studentID" required placeholder="Enter Student ID" style="width: 500px;">
+        </div>
+
+      </div>
+      <br>
+      <div class="holders">
+
+        <div class="holder">
+          <label>Grade Level</label><br>
+          <select name="gradeLevel" style="width: 208px;">
+            <option>Select Grade Level</option>
+            <option>11</option>
+            <option>12</option>
+          </select>
+            
+        </div>
+
+        &emsp;&emsp;&emsp;&emsp;&emsp;
+
+        <div class="holder">
+          <label>Strand</label><br>
+          <select name="strand" style="width: 208px;">
+            <option>Select Strand</option>
+            <option>Academic</option>
+            <option>Tech-Pro</option>
+          </select>
+            
+        </div>
+
+      </div>
+      <br>
+      </fieldset>
+      
+      <br>
+      <br>
+      
+      <fieldset>
+      <legend>Additional Information</legend>
+      <br>
+      
+      <div class="additional">
+
+  <label>Gender</label><br>
+
+  <input type="radio" name="gender" value="Male">
+  <label>Male</label>
+
+  <input type="radio" name="gender" value="Female">
+  <label>Female</label>
+
+  <input type="radio" name="gender" value="Prefer not to say">
+  <label>Prefer not to say</label>
+
+  <br><br>
+
+  <label>Hobbies</label><br>
+
+  <input type="checkbox" name="hobbies" value="Reading">
+  <label>Reading</label>
+
+  <input type="checkbox" name="hobbies" value="Coding">
+  <label>Coding</label>
+
+  <input type="checkbox" name="hobbies" value="Playing Sports">
+  <label>Playing Sports</label>
+
+  <input type="checkbox" name="hobbies" value="Watching Movies">
+  <label>Watching Movies</label>
+
+  <br>
+
+  <input type="checkbox" name="hobbies" value="Playing Games">
+  <label>Playing Games</label>
+
+  <input type="checkbox" name="hobbies" value="Music">
+  <label>Music</label>
+
+  <br><br>
+
+  <label>Complete Address</label><br>
+  <textarea name="address" rows="5" cols="63"maxlength="250"
+    placeholder="House No., Street, Barangay, City/Municipality, Province"></textarea>
+
+  <br>
+  <small>Maximum of 250 characters.</small>
+
+</div>
+      
+      </fieldset>
+      <div class="buttons">
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+      </div>
+  </form>
+</body>
+
+</html>

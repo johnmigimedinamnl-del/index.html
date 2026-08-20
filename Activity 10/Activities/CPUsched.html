@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CPU Scheduling</title>
+
+<style>
+
+
+body {background-color: #EAF7FF; font-family: Trebuchet MS, Arial, sans-serif;}
+
+table, th, td {border: 2px solid #4A90E2; background-color: #DFF4FF; border-radius: 4px; border-collapse: collapse; text-align: center; margin: auto;}
+
+th:nth-child(odd), td:nth-child(odd) {background-color: #BFE8FF;}
+
+th:nth-child(even), td:nth-child(even) {background-color: #F5FCFF;}
+
+th, td {padding: 15px; }
+
+h1 {text-align: center; font-family: Comic Sans MS, Trebuchet MS, cursive; color: #1565C0; text-shadow: 2px 2px #A7D8FF;}
+
+.sec {display: flex; justify-content: center;}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>CPU Scheduling</h1>
+
+<table width="80%">
+
+<tr>
+<th>Process</th>
+<th>AT</th>
+<th>BT</th>
+<th>CT</th>
+<th>TAT</th>
+<th>WT</th>
+</tr>
+
+<tr>
+<td>P1</td>
+<td>3</td>
+<td>5</td>
+<td>8</td>
+<td>5</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>P2</td>
+<td>4</td>
+<td>2</td>
+<td>10</td>
+<td>6</td>
+<td>4</td>
+</tr>
+
+<tr>
+<td>P3</td>
+<td>6</td>
+<td>4</td>
+<td>14</td>
+<td>8</td>
+<td>4</td>
+</tr>
+
+<tr>
+<td>P4</td>
+<td>16</td>
+<td>3</td>
+<td>19</td>
+<td>3</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>P5</td>
+<td>7</td>
+<td>17</td>
+<td>36</td>
+<td>29</td>
+<td>12</td>
+</tr>
+
+</table>
+
+<div class="sec">
+<p style="padding-left: 53%;">
+<b>Average TAT:</b> 10.2
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+<b>Average WT:</b> 4
+</p>
+</div>
+
+<h1>Gantt Chart</h1>
+
+<table width="80%">
+
+<tr>
+<th>Idle</th>
+<th>P1</th>
+<th>P2</th>
+<th>P3</th>
+<th>Idle</th>
+<th>P4</th>
+<th>P5</th>
+</tr>
+
+</table>
+
+<p style="padding-left: 10%;">
+0
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;3
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;8
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;10
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;14
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;16
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;19
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;36
+</p>
+
+</body>
+</html>

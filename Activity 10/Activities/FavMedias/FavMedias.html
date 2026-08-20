@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>My Favorite Medias</title>
+
+<style>
+
+* {margin:0; padding:0; box-sizing:border-box;}
+
+h1 {text-align: center; font-size: 60px; margin: 30px 0;}
+
+body {font-family:Arial,sans-serif; background:linear-gradient(to bottom,#1db6ff 0%,#0b6ea8 30%,#121212 100%); color:white; padding-bottom:100px;}
+
+#img {position:sticky; top:0; height:100vh; display:flex; justify-content:center; align-items:center; z-index:1;}
+
+#img img {width:90%; height:90vh; object-fit:cover; border-radius:25px; box-shadow:0 10px 30px rgba(0,0,0,.45); transition:transform .1s linear; transform-origin:center center;}
+
+#media {display:flex; justify-content:center; align-items:flex-start; gap:30px; width:90%; max-width:1500px; margin:0 auto; padding:20px 30px; position:relative; z-index:2;}
+
+#left {flex:2;}
+
+#left video {width:100%; height:75vh; min-height:550px; object-fit:cover; border-radius:20px; box-shadow:0 4px 12px rgba(0,0,0,.35);}
+
+#right {flex:1; display:flex; flex-direction:column; gap:20px;}
+
+#picx,#audx,#vidx {background:rgba(40,40,40,.92); padding:20px; font-size: 25px; border-radius:20px; box-shadow:0 4px 12px rgba(0,0,0,.35); transition:.3s; }
+
+#picx:hover,#audx:hover,#vidx:hover {transform:translateY(-5px);}
+
+#lyrics {width:90%; max-width:1500px; margin:25px auto 0; background:rgba(40,40,40,.92); padding:25px; border-radius:20px; box-shadow:0 4px 12px rgba(0,0,0,.35); height:700px; overflow-y: auto; scrollbar-width:none; scroll-behavior:smooth;}
+
+#lyrics::-webkit-scrollbar {display:none;}
+
+#lyrics h2 {text-align:center; margin-bottom:20px;}
+
+#lyrics p{color:#888; font-size:40px; text-align:center; margin:35px 0; transition:.4s;}
+
+#lyrics p.active {color:white; font-size:45px; font-weight:bold; transform:translateY(-12px); text-shadow:0 0 10px rgba(255,255,255,.6);}
+
+h2 {margin-bottom:10px;}
+
+#aud {position:fixed; left:0; bottom:0; width:100%; background:#181818; padding:15px; text-align:center; box-shadow:0 -4px 12px rgba(0,0,0,.35); z-index:999;}
+
+#aud audio {width:90%; max-width:900px;}
+
+@media(max-width:900px){
+
+#img {padding:20px; height:100vh;}
+
+#img img {width:90%; height:70vh;}
+
+#media {flex-direction:column; padding:20px;}
+
+#left,#right {width:100%;}
+
+#left video {height:320px; min-height:auto;}
+
+#lyrics {width:calc(100% - 40px); height:250px;}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1> My Favorite Medias</h1>
+
+<div id="img">
+<img src="media/image/pic.jpg" alt="Image">
+</div>
+
+<div id="media">
+
+<div id="left">
+
+<video controls>
+<source src="media/video/video.mp4" type="video/mp4">
+</video>
+
+</div>
+
+<div id="right">
+
+<div id="picx">
+<h2>My Favorite Picture</h2>
+<p>I chose this picture as my favorite because it was our latest date picture together.</p>
+</div>
+
+<div id="audx">
+<h2>My Favorite Song</h2>
+<p>This is my favorite song because it is our theme song. Whenever I hear it, it boosts my energy and reminds me of all the good memories we shared together. It always makes me feel happy.</p>
+</div>
+
+<div id="vidx">
+<h2>My Favorite Video</h2>
+<p>This video is my favorite because it captures one of our most memorable moments together. Watching it always makes me smile and reminds me of the fun times we shared.</p>
+</div>
+
+</div>
+
+</div>
+
+<div id="lyrics">
+
+<h2>Lyrics</h2>
+
+<p data-time="2.5">I found the love for me</p>  
+<p data-time="10">Oh, darling, just dive right in and follow my lead</p>  
+<p data-time="17">Well, I found a girl, beautiful and sweet</p>  
+<p data-time="25">Oh, I never knew you were the someone waitin' for me</p>  
+<p data-time="31">Cause we were just kids when we fell in love, not knowin' what it was</p>  
+<p data-time="40">I will not give you up this time</p>  
+<p data-time="48">Oh, darling, just kiss me slow, your heart is all I own</p>  
+<p data-time="55">And in your eyes, you're holding mine</p>  
+<p data-time="62">Baby, I'm dancin' in the dark with you between my arms</p>  
+<p data-time="73">Barefoot on the grass while listenin' to our favourite song</p>  
+<p data-time="80">When you said you looked a mess, I whispered underneath my breath</p>  
+<p data-time="87">But you heard it, "Darling, you look perfect tonight"</p>  
+<p data-time="101">Well, I found a woman, stronger than anyone I know</p>  
+<p data-time="108">She shares my dreams, I hope that someday, I'll share her home</p>  
+<p data-time="116">I found a love to carry more than just my secrets</p>  
+<p data-time="124">To carry love, to carry children of our own</p>  
+<p data-time="130">We are still kids, but we're so in love, fightin' against all odds</p>  
+<p data-time="139">I know we'll be alright this time</p>  
+<p data-time="146">Darling, just hold my hand, be my girl, I'll be your man</p>  
+<p data-time="154">I see my future in your eyes</p>  
+<p data-time="160">Oh, baby, I'm dancin' in the dark with you between my arms</p>  
+<p data-time="171">Barefoot on the grass while listenin' to our favourite song</p>  
+<p data-time="179">When I saw you in that dress, lookin' so beautiful</p>  
+<p data-time="185">I don't deserve this, darling, you look perfect tonight</p>  
+<p data-time="199">No, no, no</p>  
+<p data-time="203">Mm, oh</p>  
+<p data-time="206">Baby, I'm dancin' in the dark with you between my arms</p>  
+<p data-time="217">Barefoot on the grass while listenin' to our favourite song</p>  
+<p data-time="224">I have faith in what I see, now I know I have met</p>  
+<p data-time="230">An angel in person, and she looks perfect</p>  
+<p data-time="238">Though I don't deserve this, you look perfect tonight</p>  
+
+</div>
+
+<div id="aud">
+
+<audio controls>
+<source src="media/audio/perfect.mp3" type="audio/mpeg">
+</audio>
+
+</div>
+
+<script>
+
+window.addEventListener("scroll",function(){
+
+const scroll=window.scrollY;
+
+const album=document.querySelector("#img img");
+
+let scale=1-(scroll/2200);
+
+if(scale<0.75){
+scale=0.75;
+}
+
+album.style.transform="translateY("+(-scroll*0.5)+"px) scale("+scale+")";
+
+});
+
+const audio=document.querySelector("#aud audio");
+
+const lines=document.querySelectorAll("#lyrics p");
+
+audio.addEventListener("timeupdate",function(){
+
+const time=audio.currentTime;
+
+let current=-1;
+
+lines.forEach(function(line,index){
+
+if(time>=Number(line.dataset.time)){
+current=index;
+}
+
+});
+
+lines.forEach(function(line){
+line.classList.remove("active");
+});
+
+if(current>=0){
+
+lines[current].classList.add("active");
+
+lines[current].scrollIntoView({
+behavior:"smooth",
+block:"center"
+});
+
+}
+
+});
+
+</script>
+
+</body>
+</html>
